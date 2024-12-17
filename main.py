@@ -12,8 +12,6 @@ class WeatherApp(QMainWindow):
         uic.loadUi('weather_app.ui', self)
         self.showWeatherButton.clicked.connect(self.show_weather)
 
-# Jopa Negra
-
     def show_weather(self):
         city = self.cityInput.text()
         # Здесь вы можете использовать API погоды
